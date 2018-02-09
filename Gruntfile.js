@@ -135,21 +135,13 @@ module.exports = function(grunt) {
 
     tests: {
       jqlite: 'karma-jqlite.conf.js',
-      jquery: 'karma-jquery.conf.js',
-      'jquery-2.2': 'karma-jquery-2.2.conf.js',
-      'jquery-2.1': 'karma-jquery-2.1.conf.js',
-      docs: 'karma-docs.conf.js',
       modules: 'karma-modules.conf.js'
     },
 
 
     autotest: {
       jqlite: 'karma-jqlite.conf.js',
-      jquery: 'karma-jquery.conf.js',
-      'jquery-2.2': 'karma-jquery-2.2.conf.js',
-      'jquery-2.1': 'karma-jquery-2.1.conf.js',
-      modules: 'karma-modules.conf.js',
-      docs: 'karma-docs.conf.js'
+      modules: 'karma-modules.conf.js'
     },
 
 
@@ -170,15 +162,11 @@ module.exports = function(grunt) {
         src: [
           '*.js',
           'benchmarks/**/*.js',
-          'docs/**/*.js',
           'lib/**/*.js',
           'scripts/**/*.js',
           'src/**/*.js',
           'test/**/*.js',
           'i18n/**/*.js',
-          '!docs/app/assets/js/angular-bootstrap/**',
-          '!docs/bower_components/**',
-          '!docs/config/templates/**',
           '!src/angular.bind.js',
           '!i18n/closure/**',
           '!src/ngParseExt/ucd.js'
@@ -308,7 +296,6 @@ module.exports = function(grunt) {
       files: [
         'src/**/*',
         'test/**/*',
-        'docs/**/*',
         'css/**/*'
       ]
     },
@@ -323,34 +310,6 @@ module.exports = function(grunt) {
             flatten: true
           }
         ]
-      },
-      deployFirebaseCode: {
-        files: [
-          // the zip file should not be compressed again.
-          {
-            src: 'build/*.zip',
-            dest: 'uploadCode/' + deployVersion + '/',
-            expand: true,
-            flatten: true
-          }
-        ]
-      },
-      deployFirebaseDocs: {
-        files: [
-          // The source files are needed by the embedded examples in the docs app.
-          {
-            src: 'build/angular*.{js,js.map,min.js}',
-            dest: 'uploadDocs/',
-            expand: true,
-            flatten: true
-          },
-          {
-            cwd: 'build/docs',
-            src: '**',
-            dest: 'uploadDocs/',
-            expand: true
-          }
-        ]
       }
     },
 
@@ -363,23 +322,10 @@ module.exports = function(grunt) {
         expand: true,
         dot: true,
         dest: dist + '/'
-      },
-      deployFirebaseCode: {
-        options: {
-          mode: 'gzip'
-        },
-        src: ['**', '!*.zip'],
-        cwd: 'build',
-        expand: true,
-        dest: 'uploadCode/' + deployVersion + '/'
       }
     },
 
     shell: {
-      // Travis expects the firebase.json in the repository root, but we have it in a sub-folder
-      'symlink-firebase-docs': {
-        command: 'ln -s ./scripts/docs.angularjs.org-firebase/firebase.json ./firebase.json'
-      },
       'install-node-dependencies': {
         command: 'yarn'
       },
@@ -410,28 +356,20 @@ module.exports = function(grunt) {
   });
 
   //alias tasks
-  grunt.registerTask('test', 'Run unit, docs and e2e tests with Karma', [
+  grunt.registerTask('test', 'Run unit and e2e tests with Karma', [
     'eslint',
     'package',
     'test:unit',
     'test:promises-aplus',
-    'tests:docs',
     'test:protractor'
   ]);
   grunt.registerTask('test:jqlite', 'Run the unit tests with Karma' , ['tests:jqlite']);
-  grunt.registerTask('test:jquery', 'Run the jQuery (latest) unit tests with Karma', ['tests:jquery']);
-  grunt.registerTask('test:jquery-2.2', 'Run the jQuery 2.2 unit tests with Karma', ['tests:jquery-2.2']);
-  grunt.registerTask('test:jquery-2.1', 'Run the jQuery 2.1 unit tests with Karma', ['tests:jquery-2.1']);
   grunt.registerTask('test:modules', 'Run the Karma module tests with Karma', [
     'build',
     'tests:modules'
   ]);
-  grunt.registerTask('test:docs', 'Run the doc-page tests with Karma', ['package', 'tests:docs']);
   grunt.registerTask('test:unit', 'Run unit, jQuery and Karma module tests with Karma', [
     'test:jqlite',
-    'test:jquery',
-    'test:jquery-2.2',
-    'test:jquery-2.1',
     'test:modules'
   ]);
   grunt.registerTask('test:protractor', 'Run the end to end tests with Protractor and keep a test server running in the background', [
@@ -466,7 +404,6 @@ module.exports = function(grunt) {
     'minall',
     'collect-errors',
     'write',
-    'docs',
     'copy:i18n',
     'compress:build'
   ]);
@@ -474,13 +411,6 @@ module.exports = function(grunt) {
     'ddescribe-iit',
     'merge-conflict',
     'eslint'
-  ]);
-  grunt.registerTask('prepareFirebaseDeploy', [
-    'package',
-    'compress:deployFirebaseCode',
-    'copy:deployFirebaseCode',
-    'firebaseDocsJsonForTravis',
-    'copy:deployFirebaseDocs'
   ]);
   grunt.registerTask('default', ['package']);
 };
