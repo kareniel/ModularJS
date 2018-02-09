@@ -198,10 +198,6 @@ module.exports = function(grunt) {
         dest: 'build/angular-loader.js',
         src: util.wrap(files['angularLoader'], 'loader')
       },
-      touch: {
-        dest: 'build/angular-touch.js',
-        src: util.wrap(files['angularModules']['ngTouch'], 'module')
-      },
       mocks: {
         dest: 'build/angular-mocks.js',
         src: util.wrap(files['angularModules']['ngMock'], 'module'),
@@ -211,29 +207,9 @@ module.exports = function(grunt) {
         dest: 'build/angular-sanitize.js',
         src: util.wrap(files['angularModules']['ngSanitize'], 'module')
       },
-      resource: {
-        dest: 'build/angular-resource.js',
-        src: util.wrap(files['angularModules']['ngResource'], 'module')
-      },
-      messageformat: {
-        dest: 'build/angular-message-format.js',
-        src: util.wrap(files['angularModules']['ngMessageFormat'], 'module')
-      },
-      messages: {
-        dest: 'build/angular-messages.js',
-        src: util.wrap(files['angularModules']['ngMessages'], 'module')
-      },
       animate: {
         dest: 'build/angular-animate.js',
         src: util.wrap(files['angularModules']['ngAnimate'], 'module')
-      },
-      route: {
-        dest: 'build/angular-route.js',
-        src: util.wrap(files['angularModules']['ngRoute'], 'module')
-      },
-      cookies: {
-        dest: 'build/angular-cookies.js',
-        src: util.wrap(files['angularModules']['ngCookies'], 'module')
       },
       aria: {
         dest: 'build/angular-aria.js',
@@ -253,13 +229,7 @@ module.exports = function(grunt) {
     min: {
       angular: 'build/angular.js',
       animate: 'build/angular-animate.js',
-      cookies: 'build/angular-cookies.js',
       loader: 'build/angular-loader.js',
-      messageformat: 'build/angular-message-format.js',
-      messages: 'build/angular-messages.js',
-      touch: 'build/angular-touch.js',
-      resource: 'build/angular-resource.js',
-      route: 'build/angular-route.js',
       sanitize: 'build/angular-sanitize.js',
       aria: 'build/angular-aria.js',
       parseext: 'build/angular-parse-ext.js'
