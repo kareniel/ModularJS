@@ -107,33 +107,9 @@ var angularFiles = {
       'src/ngAnimate/ngAnimateSwap.js',
       'src/ngAnimate/module.js'
     ],
-    'ngCookies': [
-      'src/ngCookies/cookies.js',
-      'src/ngCookies/cookieStore.js',
-      'src/ngCookies/cookieWriter.js'
-    ],
-    'ngMessageFormat': [
-      'src/ngMessageFormat/messageFormatCommon.js',
-      'src/ngMessageFormat/messageFormatSelector.js',
-      'src/ngMessageFormat/messageFormatInterpolationParts.js',
-      'src/ngMessageFormat/messageFormatParser.js',
-      'src/ngMessageFormat/messageFormatService.js'
-    ],
-    'ngMessages': [
-      'src/ngMessages/messages.js'
-    ],
     'ngParseExt': [
       'src/ngParseExt/ucd.js',
       'src/ngParseExt/module.js'
-    ],
-    'ngResource': [
-      'src/ngResource/resource.js'
-    ],
-    'ngRoute': [
-      'src/shallowCopy.js',
-      'src/ngRoute/route.js',
-      'src/ngRoute/routeParams.js',
-      'src/ngRoute/directive/ngView.js'
     ],
     'ngSanitize': [
       'src/ngSanitize/sanitize.js',
@@ -142,12 +118,6 @@ var angularFiles = {
     'ngMock': [
       'src/ngMock/angular-mocks.js',
       'src/ngMock/browserTrigger.js'
-    ],
-    'ngTouch': [
-      'src/ngTouch/touch.js',
-      'src/ngTouch/swipe.js',
-      'src/ngTouch/directive/ngClick.js',
-      'src/ngTouch/directive/ngSwipe.js'
     ],
     'ngAria': [
       'src/ngAria/aria.js'
@@ -178,14 +148,8 @@ var angularFiles = {
     'test/auto/*.js',
     'test/ng/**/*.js',
     'test/ngAnimate/*.js',
-    'test/ngMessageFormat/*.js',
-    'test/ngMessages/*.js',
-    'test/ngCookies/*.js',
-    'test/ngResource/*.js',
-    'test/ngRoute/**/*.js',
     'test/ngSanitize/**/*.js',
     'test/ngMock/*.js',
-    'test/ngTouch/**/*.js',
     'test/ngAria/*.js'
   ],
 
@@ -216,14 +180,8 @@ var angularFiles = {
     'test/modules/no_bootstrap.js',
     'test/helpers/*.js',
     'test/ngAnimate/*.js',
-    'test/ngMessageFormat/*.js',
-    'test/ngMessages/*.js',
     'test/ngMock/*.js',
-    'test/ngCookies/*.js',
-    'test/ngRoute/**/*.js',
-    'test/ngResource/*.js',
     'test/ngSanitize/**/*.js',
-    'test/ngTouch/**/*.js',
     'test/ngAria/*.js'
   ],
 
@@ -257,14 +215,8 @@ var angularFiles = {
 
 angularFiles['angularSrcModules'] = [].concat(
   angularFiles['angularModules']['ngAnimate'],
-  angularFiles['angularModules']['ngMessageFormat'],
-  angularFiles['angularModules']['ngMessages'],
-  angularFiles['angularModules']['ngCookies'],
-  angularFiles['angularModules']['ngResource'],
-  angularFiles['angularModules']['ngRoute'],
   angularFiles['angularModules']['ngSanitize'],
   angularFiles['angularModules']['ngMock'],
-  angularFiles['angularModules']['ngTouch'],
   angularFiles['angularModules']['ngAria']
 );
 

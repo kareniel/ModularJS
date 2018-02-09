@@ -838,7 +838,6 @@ describe('ngMock', function() {
               'service': mock,
               'other': { some: 'replacement'}
             },
-            'ngResource',
             function($provide) { $provide.value('example', 'win'); }
           );
         });
@@ -857,9 +856,8 @@ describe('ngMock', function() {
         });
 
         it('should integrate with string and function', function() {
-          inject(function(service, $resource, example) {
+          inject(function(service, example) {
             expect(service).toEqual(mock);
-            expect($resource).toBeDefined();
             expect(example).toEqual('win');
           });
         });
