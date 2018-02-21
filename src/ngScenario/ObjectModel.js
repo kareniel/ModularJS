@@ -76,7 +76,7 @@ angular.scenario.ObjectModel = function(runner) {
   runner.on('StepEnd', function(spec) {
     var it = self.getSpec(spec.id);
     var step = it.getLastStep();
-    if (step.name !== step.name) {
+    if (step.name !== step.name) { // eslint-disable-line no-self-compare
       throw new Error('Events fired in the wrong order. Step names don\'t match.');
     }
     complete(step);

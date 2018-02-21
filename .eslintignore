@@ -9,3 +9,4 @@ src/ngParseExt/ucd.js
 i18n/closure/**
 tmp/**
 vendor/**
+dist/**
