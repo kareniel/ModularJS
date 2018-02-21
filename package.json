@@ -1,7 +1,7 @@
 {
-  "name": "angularjs-modular",
-  "main": "dist/angular.js",
+  "name": "angular",
   "version": "1.6.9",
+  "main": "dist/angular.js",
   "license": "MIT",
   "repository": {
     "type": "git",
