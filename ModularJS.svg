@@ -1,0 +1,61 @@
+<svg width="1105" height="1105" viewBox="0 0 1105 1105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>sticker-frame</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(1097 1752)">
+<clipPath id="clip-0" clip-rule="evenodd">
+<path d="M -1097 -1752L 8 -1752L 8 -647L -1097 -647L -1097 -1752Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="sticker-frame" clip-path="url(#clip-0)">
+<g id="sticker">
+<clipPath id="clip-1" clip-rule="evenodd">
+<path d="M -217 -1530L -217 -869L -871 -869L -871 -1530L -217 -1530Z" fill="#FFFFFF"/>
+</clipPath>
+<g id="Logo - Dark Background" clip-path="url(#clip-1)">
+</g>
+<g id="Hexagon">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -87 -1728)" fill="#3B215E"/>
+<mask id="mask0_outline_ins">
+<use xlink:href="#path0_fill" fill="white" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -87 -1728)"/>
+</mask>
+<g mask="url(#mask0_outline_ins)">
+<use xlink:href="#path1_stroke_2x" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -87 -1728)" fill="url(#paint1_diamond)"/>
+</g>
+</g>
+</g>
+<g id="Group">
+<g id="v2">
+<use xlink:href="#path2_fill" transform="matrix(-1 1.40694e-16 -1.08417e-16 -1 -657.423 -1000)" fill="url(#paint2_linear)"/>
+</g>
+<g id="v2">
+<use xlink:href="#path2_fill" transform="matrix(-1 1.40694e-16 -1.08417e-16 -1 -436.521 -1000)" fill="url(#paint3_linear)"/>
+</g>
+<g id="v1">
+<use xlink:href="#path3_fill" transform="matrix(-1 1.29788e-16 -1.15924e-16 -1 -282 -1000)" fill="#FFFFFF"/>
+</g>
+<g id="v1">
+<use xlink:href="#path3_fill" transform="matrix(-1 1.40694e-16 -1.08417e-16 -1 -505.104 -1000)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint1_diamond" cx="0.5" cy="0.5" r="0.5" gradientUnits="userSpaceOnUse" gradientTransform="matrix(6.47226e-14 915 -1057 5.60276e-14 1057 -5.60276e-14)">
+<stop offset="0" stop-color="#909AA7"/>
+<stop offset="1" stop-color="#DAE1E9"/>
+</radialGradient>
+<linearGradient id="paint2_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-22.0168 400 -148.577 -13.7722 139.936 6.88609)">
+<stop offset="0" stop-color="#EDF3FA"/>
+<stop offset="1" stop-color="#818C9A"/>
+</linearGradient>
+<linearGradient id="paint3_linear" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-22.0168 400 -148.577 -13.7722 139.936 6.88609)">
+<stop offset="0" stop-color="#EDF3FA"/>
+<stop offset="1" stop-color="#818C9A"/>
+</linearGradient>
+<path id="path0_fill" d="M 1057 457.5L 792.75 915L 264.25 915L 0 457.5L 264.25 -1.74652e-08L 792.75 -1.74652e-08L 1057 457.5Z"/>
+<path id="path1_stroke_2x" d="M 1057 457.5L 1084.71 473.505L 1093.95 457.5L 1084.71 441.495L 1057 457.5ZM 792.75 915L 792.75 947L 811.221 947L 820.46 931.005L 792.75 915ZM 264.25 915L 236.54 931.005L 245.779 947L 264.25 947L 264.25 915ZM 0 457.5L -27.7099 441.495L -36.9543 457.5L -27.7099 473.505L 0 457.5ZM 264.25 -1.74652e-08L 264.25 -32L 245.779 -32L 236.54 -16.0051L 264.25 -1.74652e-08ZM 792.75 -1.74652e-08L 820.46 -16.0051L 811.221 -32L 792.75 -32L 792.75 -1.74652e-08ZM 1029.29 441.495L 765.04 898.995L 820.46 931.005L 1084.71 473.505L 1029.29 441.495ZM 792.75 883L 264.25 883L 264.25 947L 792.75 947L 792.75 883ZM 291.96 898.995L 27.7099 441.495L -27.7099 473.505L 236.54 931.005L 291.96 898.995ZM 27.7099 473.505L 291.96 16.0051L 236.54 -16.0051L -27.7099 441.495L 27.7099 473.505ZM 264.25 32L 792.75 32L 792.75 -32L 264.25 -32L 264.25 32ZM 765.04 16.0051L 1029.29 473.505L 1084.71 441.495L 820.46 -16.0051L 765.04 16.0051Z"/>
+<path id="path2_fill" d="M 44.5732 400L 148.577 0L 64.7798 0L 4.76242e-06 273.114L 44.5732 400Z"/>
+<path id="path3_fill" fill-rule="evenodd" d="M 199.619 400L 88.7858 -2.89562e-23L 0 -2.89562e-23L 105.47 400L 199.619 400Z"/>
+</defs>
+</svg>

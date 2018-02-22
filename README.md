@@ -1,3 +1,12 @@
+<h1 align="center">
+  <br>
+  <a href="https://github.com/kareniel/ModularJS">
+    <img style="display: block" alt="ModularJS" width="200" src="ModularJS.svg">
+  </a>
+  <br>
+</h1>
+
+
 ModularJS
 =========
 
