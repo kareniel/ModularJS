@@ -10,3 +10,6 @@ i18n/closure/**
 tmp/**
 vendor/**
 dist/**
+bin
+index.js
+example
