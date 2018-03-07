@@ -10,8 +10,8 @@
 Modular AngularJS
 =========
 
-[![npm version](https://badge.fury.io/js/modular-angularjs.svg)](https://www.npmjs.com/package/modular-angularjs)
-[![npm](https://img.shields.io/npm/dm/modular-angularjs.svg)](https://www.npmjs.com/package/modular-angularjs)
+[![npm version](https://badge.fury.io/js/angularjs-modular.svg)](https://www.npmjs.com/package/angularjs-modular)
+[![npm](https://img.shields.io/npm/dm/angularjs-modular.svg)](https://www.npmjs.com/package/angularjs-modular)
 [![stability - experimental][experimental-img]][stability-url]
 
 This is a fork of AngularJS (v1.6.9) meant to help teams migrate to lightweight and modular frameworks.
